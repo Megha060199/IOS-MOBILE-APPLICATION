@@ -11,7 +11,7 @@ import SwiftUI
 struct ebayAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchScreen()
         }
     }
 }

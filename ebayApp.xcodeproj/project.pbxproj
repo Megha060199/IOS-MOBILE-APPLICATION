@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2710F6152B20F9BF0095A38C /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710F6142B20F9BF0095A38C /* LaunchScreen.swift */; };
+		273D35BB2B059CCC009AD3A6 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D35BA2B059CCC009AD3A6 /* Checkbox.swift */; };
+		273D35BD2B05B091009AD3A6 /* SharedVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D35BC2B05B091009AD3A6 /* SharedVariables.swift */; };
+		2759D3662B06B81700BE90F9 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 2759D3652B06B81700BE90F9 /* Inject */; };
+		2776C2FA2B08615F0052CE8A /* ToastSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2776C2F92B08615F0052CE8A /* ToastSwiftUI */; };
+		2776C2FD2B0864440052CE8A /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2776C2FC2B0864440052CE8A /* SimpleToast */; };
 		279D17E12B027F5B001B9159 /* ebayAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D17E02B027F5B001B9159 /* ebayAppApp.swift */; };
 		279D17E32B027F5B001B9159 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D17E22B027F5B001B9159 /* ContentView.swift */; };
 		279D17E52B027F5E001B9159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279D17E42B027F5E001B9159 /* Assets.xcassets */; };
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2710F6142B20F9BF0095A38C /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		273D35B92B05615D009AD3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		273D35BA2B059CCC009AD3A6 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		273D35BC2B05B091009AD3A6 /* SharedVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedVariables.swift; sourceTree = "<group>"; };
 		279D17DD2B027F5B001B9159 /* ebayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ebayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279D17E02B027F5B001B9159 /* ebayAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebayAppApp.swift; sourceTree = "<group>"; };
 		279D17E22B027F5B001B9159 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2776C2FA2B08615F0052CE8A /* ToastSwiftUI in Frameworks */,
+				2776C2FD2B0864440052CE8A /* SimpleToast in Frameworks */,
+				2759D3662B06B81700BE90F9 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,7 @@
 		279D17D42B027F5B001B9159 = {
 			isa = PBXGroup;
 			children = (
+				273D35BC2B05B091009AD3A6 /* SharedVariables.swift */,
 				279D17DF2B027F5B001B9159 /* ebayApp */,
 				279D17F02B027F5E001B9159 /* ebayAppTests */,
 				279D17FA2B027F5E001B9159 /* ebayAppUITests */,
@@ -94,8 +108,11 @@
 		279D17DF2B027F5B001B9159 /* ebayApp */ = {
 			isa = PBXGroup;
 			children = (
+				273D35B92B05615D009AD3A6 /* Info.plist */,
 				279D17E02B027F5B001B9159 /* ebayAppApp.swift */,
 				279D17E22B027F5B001B9159 /* ContentView.swift */,
+				2710F6142B20F9BF0095A38C /* LaunchScreen.swift */,
+				273D35BA2B059CCC009AD3A6 /* Checkbox.swift */,
 				279D17E42B027F5E001B9159 /* Assets.xcassets */,
 				279D17E62B027F5E001B9159 /* Preview Content */,
 			);
@@ -143,6 +160,11 @@
 			dependencies = (
 			);
 			name = ebayApp;
+			packageProductDependencies = (
+				2759D3652B06B81700BE90F9 /* Inject */,
+				2776C2F92B08615F0052CE8A /* ToastSwiftUI */,
+				2776C2FC2B0864440052CE8A /* SimpleToast */,
+			);
 			productName = ebayApp;
 			productReference = 279D17DD2B027F5B001B9159 /* ebayApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,11 @@
 				Base,
 			);
 			mainGroup = 279D17D42B027F5B001B9159;
+			packageReferences = (
+				2759D3642B06B81700BE90F9 /* XCRemoteSwiftPackageReference "Inject" */,
+				2776C2F82B08615F0052CE8A /* XCRemoteSwiftPackageReference "ToastSwiftUI" */,
+				2776C2FB2B0864440052CE8A /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
 			productRefGroup = 279D17DE2B027F5B001B9159 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273D35BD2B05B091009AD3A6 /* SharedVariables.swift in Sources */,
 				279D17E32B027F5B001B9159 /* ContentView.swift in Sources */,
+				2710F6152B20F9BF0095A38C /* LaunchScreen.swift in Sources */,
 				279D17E12B027F5B001B9159 /* ebayAppApp.swift in Sources */,
+				273D35BB2B059CCC009AD3A6 /* Checkbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +454,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ebayApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ebayApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,6 +464,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.webtech.ebayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -452,9 +486,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ebayApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ebayApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -582,6 +616,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2759D3642B06B81700BE90F9 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.4;
+			};
+		};
+		2776C2F82B08615F0052CE8A /* XCRemoteSwiftPackageReference "ToastSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huynguyencong/ToastSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.6;
+			};
+		};
+		2776C2FB2B0864440052CE8A /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2759D3652B06B81700BE90F9 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2759D3642B06B81700BE90F9 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+		2776C2F92B08615F0052CE8A /* ToastSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2776C2F82B08615F0052CE8A /* XCRemoteSwiftPackageReference "ToastSwiftUI" */;
+			productName = ToastSwiftUI;
+		};
+		2776C2FC2B0864440052CE8A /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2776C2FB2B0864440052CE8A /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 279D17D52B027F5B001B9159 /* Project object */;
 }
